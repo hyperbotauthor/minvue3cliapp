@@ -1,5 +1,9 @@
 # minvue3cliapp
 
+## Code Sandbox
+
+https://codesandbox.io/s/white-browser-fl7ji
+
 ## Project setup
 ```
 yarn install
