@@ -3,10 +3,10 @@
 
   Works when imported from the template
 
-  <Tabpane>
+  <Tabpane2>
     <div caption="I am div 1">Div 1</div>
     <div caption="I am div 2">Div 2</div>
-  </Tabpane>
+  </Tabpane2>
 
   Triggers warning when imported from an other component
 
@@ -14,13 +14,13 @@
 </template>
 
 <script>
-import Tabpane from "./components/Tabpane.vue";
+import Tabpane2 from "./components/Tabpane2.vue";
 import Composite from "./components/Composite.js";
 
 export default {
   name: "App",
   components: {
-    Tabpane,
+    Tabpane2,
     Composite,
   },
 };
