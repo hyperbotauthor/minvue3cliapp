@@ -1,23 +1,18 @@
 <template>
   <!--<img alt="Vue logo" src="./assets/logo.png">-->
-  Works with plain slots
-  <HelloWorld>
-    <div>Div 1</div>
-    <div>Div 2</div>
-  </HelloWorld>
-  Triggers warning when slots are used from other component
-  <Composite> </Composite>
+  <Tabpane>
+    <div caption="I am div 1">Div 1</div>
+    <div caption="I am div 2">Div 2</div>
+  </Tabpane>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-import Composite from "./components/Composite";
+import Tabpane from "./components/Tabpane";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
-    Composite,
+    Tabpane,
   },
 };
 </script>
