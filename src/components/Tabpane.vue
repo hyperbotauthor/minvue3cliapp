@@ -26,7 +26,7 @@ export default defineComponent({
       e.props && e.props.caption ? e.props.caption : `Tab ${i + 1}`
     );
 
-    const tabRefs = tabs.map((_) => ref(0));
+    const tabRefs = tabs.map(() => ref(0));
 
     let selectedTab = 0;
 
@@ -56,7 +56,7 @@ export default defineComponent({
       setSelected();
     });
 
-    const tabScrollTops = tabs.map((tab) => 0);
+    const tabScrollTops = tabs.map(() => 0);
 
     return () => {
       const tabDivs = h(
@@ -72,7 +72,9 @@ export default defineComponent({
               class: ["tab"],
               onClick: () => {
                 setSelected(i);
+                /* eslint-disable */
                 contentDivRef._rawValue.scrollTop = tabScrollTops[selectedTab];
+                /* eslint-ebable */
                 emit("tabpanechanged", {
                   event: "tabpanechanged",
                   id: props.id,
