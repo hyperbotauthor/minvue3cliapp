@@ -4,17 +4,13 @@ import { defineComponent, h, onMounted, ref } from "vue";
 export default defineComponent({
   name: "Tabpane",
   props: {
-    id: {
-      type: String,
-      required: true,
-    },
     width: {
       type: Number,
-      default: 600,
+      default: 400,
     },
     height: {
       type: Number,
-      default: 400,
+      default: 200,
     },
   },
   setup(props, { slots, emit }) {
